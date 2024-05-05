@@ -101,3 +101,9 @@ input{
   width: 250px;
   height: 20px;
 }
+
+hr{
+  height: 2px;
+  background-color: red;
+  border: 1px solid red;
+}
