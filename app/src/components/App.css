@@ -1,5 +1,20 @@
 .App {
   text-align: center;
+  color: tomato;
+  font-size: 50px;
+}
+button {
+  background-color: green;
+  color: white;
+  font-size: 50px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 10px;
+}
+body{
+  background-color: black;
+  color: white;
 }
 
 .App-logo {
@@ -37,73 +52,3 @@
   }
 }
 
-.paragrafo{
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  font-size: 40px;
-  color: yellow;
-}
-
-.bottone{
-  color: yellow;
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  font-size: 40px;
-  border: 3px solid yellow;
-  border-radius: 10px;
-  background-color: purple;
-}
-
-body{
-  background-color: black;
-}
-
-.carica{
-  color:white;
-  background-color: blue;
-  text-align: center;
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  font-size: 60px;
-  border: 3px solid white;
-  border-radius: 10px;
-}
-
-.elimina_modifica{
-  color:white;
-  background-color: red;
-  text-align: center;
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  font-size: 40px;
-  border: 3px solid white;
-  border-radius: 10px;
-}
-
-.conferma{
-  color:lightgreen;
-  text-align: center;
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  font-size: 40px;
-}
-
-h1{
-  color: white;
-}
-
-h2{
-  color: antiquewhite;
-}
-
-input{
-  background-color:lightblue;
-  color:black;
-  font-size: 25px;
-  border-radius: 9px;
-  border: 1px solid crimson;
-  padding: 4px;
-  width: 250px;
-  height: 20px;
-}
-
-hr{
-  height: 2px;
-  background-color: red;
-  border: 1px solid red;
-}

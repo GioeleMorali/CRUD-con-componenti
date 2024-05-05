@@ -42,11 +42,11 @@ export default function Modifica({ id, setInsert, caricaAlunni, inModifica, setI
 return(
     <>
     {showModifica ? (
-          <div className="elimina_modifica">Modifica in corso...</div>
+          <div>Modifica in corso...</div>
         ) 
         : 
         (
-          <span className="conferma">
+          <span>
             {inModifica ? (
               <>
                 <br />
@@ -54,14 +54,14 @@ return(
                 <input type="text" onChange={gestisciCambioCognome} value={cognome} placeholder="Inserisci il cognome"></input>
                 <br />
                 <br />
-                <button onClick={modificaAlunno} className="bottone">Salva modifica</button>
-                <button onClick={annullaModifica} className="bottone">Annulla modifica</button>
+                <button onClick={modificaAlunno}>Salva modifica</button>
+                <button onClick={annullaModifica}>Annulla modifica</button>
               </>
             ) 
             : (
               <>
                 {!inConferma && 
-                  <button onClick={richiediModifica} className="bottone">Modifica</button>
+                  <button onClick={richiediModifica}>Modifica</button>
                 }
               </>
             )

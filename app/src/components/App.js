@@ -26,11 +26,11 @@ function App() {
     <div className="App">
       { 
         inCaricamento ?
-          <div className="carica">In caricamento... </div>
+          <div>In caricamento... </div>
         :
         (
           <>
-          <button onClick={caricaAlunni} className="bottone">Carica alunni</button>
+          <button onClick={caricaAlunni}>Carica alunni</button>
           <hr />
           {
             alunni.map((alunno) => (

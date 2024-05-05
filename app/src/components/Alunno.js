@@ -12,12 +12,12 @@ const [showModifica, setShowModifica] = useState(false);
 
 return(
     <div>
-    <p className="paragrafo">
+    <p>
         {
             //Per non far vedere nome e cognome quando sto cancellando o modificando
             (!inCancellazione && !showModifica) &&
             <>
-                {` ${alunno.nome} ${alunno.cognome} `}
+                {alunno.nome} {alunno.cognome}
             </>   
         }
         <Cancellazione id={alunno.id} setInsert={setInsert} caricaAlunni={caricaAlunni} inConferma={inConferma} setInConferma={setInConferma} inModifica={inModifica} inCancellazione={inCancellazione} setInCancellazione={setInCancellazione}/>

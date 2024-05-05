@@ -35,7 +35,7 @@ export default function Inserimento({ caricaAlunni, insert }) {
             <>
             {
                 insert &&
-                <button onClick={() => setShowForm(true)} className="bottone">Inserisci nuovo alunno</button>
+                <button onClick={() => setShowForm(true)}>Inserisci nuovo alunno</button>
             }
             </>
         )
@@ -46,8 +46,8 @@ export default function Inserimento({ caricaAlunni, insert }) {
           <h2>Nome: <input type="text" onChange={gestisciCambioNome} value={nome} placeholder="Inserisci il nome"/></h2>
           <h2>Cognome: <input type="text" onChange={gestisciCambioCognome} value={cognome} placeholder="Inserisci il cognome"/></h2>
           <br />
-          <button onClick={salvaAlunno} className="bottone">Salva</button>
-          <button onClick={() => setShowForm(false)} className="bottone">Annulla</button>
+          <button onClick={salvaAlunno}>Salva</button>
+          <button onClick={() => setShowForm(false)}>Annulla</button>
         </div>
         )}
     </>

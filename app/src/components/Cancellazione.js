@@ -1,5 +1,4 @@
 import "./App.css";
-import { useState } from "react";
 
 export default function Cancellazione({ id, setInsert, caricaAlunni, inConferma, setInConferma, inModifica, inCancellazione, setInCancellazione}) {
     
@@ -27,7 +26,7 @@ export default function Cancellazione({ id, setInsert, caricaAlunni, inConferma,
 return(
     <>
     {inCancellazione ? (
-        <div className="elimina_modifica">Cancellazione in corso...</div>
+        <div>Cancellazione in corso...</div>
       ) 
       : 
       (
@@ -37,15 +36,15 @@ return(
               <br />
               <br />
               Sei sicuro?
-              <button onClick={cancellaAlunno} className="bottone">si</button>
-              <button onClick={annullaCancellazione} className="bottone">no</button>
+              <button onClick={cancellaAlunno}>si</button>
+              <button onClick={annullaCancellazione}>no</button>
             </>
           ) : 
             (
             <>
               { !inModifica &&
                 <>
-                <button onClick={richiediConferma} className="bottone">Cancella</button>
+                <button onClick={richiediConferma}>Cancella</button>
                 {" "}
                 </>
               }
